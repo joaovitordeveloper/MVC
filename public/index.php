@@ -1,8 +1,16 @@
 <?php
 
+use app\classes\Uri;
 use core\Controller;
 
 require '../bootstrap.php';
 
-$controller = new Controller;
-//$controller = $controller->getController();
+try {
+    $controller = new Controller;
+    $controller = $controller->load();
+} catch (\Throwable $th) {
+    dd($th->getMessage());
+}
+
+
+dd($controller);
