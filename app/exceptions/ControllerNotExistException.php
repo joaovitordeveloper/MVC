@@ -2,6 +2,4 @@
 
 namespace app\exceptions;
 
-use Exception;
-
-class ControllerNotExistException extends \Exception{}
+class ControllerNotExistException extends \Exception {}

@@ -1,7 +1,7 @@
 <?php
 
-function dd($dump)
-{
-    var_dump($dump);
-    die();
+function dd($dump) {
+	var_dump($dump);
+
+	die();
 }
